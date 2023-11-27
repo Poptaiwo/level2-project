@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="show"></div>
+    
+
+    <input type="text" placeholder="input name" id="todo">
+
+    <button onclick="add()">ADD NAME</button>
+
+    <script>
+        let array = []
+
+        function add() {
+            let items = document.getElementById("todo").value;
+            array.push(items)
+            todo.value=""
+            
+            display()
+        }
+        
+        function display() {
+        let i;
+            for (let i = 0; i < array.length; i++) {
+                let element = array[i]
+                show.innerHTML += `<p> ${element} </p>`
+                
+            }
+        }
+    </script>
+</body>
+
+</html>
