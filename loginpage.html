@@ -162,7 +162,7 @@ a{
           </div>
           <span class="span">Forgot password?</span>
         </div>
-        <button class="button-submit">Sign in</button>
+        <button class="button-submit" onclick="signIn()" >Sign in</button>
         <p class="p">Don't have an account? <span class="span"><a href="signup.html">Sign Up</a></span>
     
         </p><p class="p line">Or With</p>
@@ -195,5 +195,10 @@ a{
     </button></div></form>
 
 
+    <script>
+      const signIn = (()=>{
+        window.location.href = "afterlog.html"
+      })
+    </script>
 </body>
 </html>
